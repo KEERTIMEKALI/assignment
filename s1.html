@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <form action="/num" method="post">
+        <select id="mylist", name="mylist">
+            {% for i in val %}
+            <option value="{{ i }}">{{ i }}</option>
+            {% endfor %}
+        </select>
+        <button type="submit">submit</button>
+    </form>
+</center>
+
+</body>
+</html>
